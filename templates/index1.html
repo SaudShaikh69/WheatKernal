@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wheat Kernel Predictor</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style1.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <header>
+                <h1>WHEAT KERNEL PREDICTOR</h1>
+            </header>
+        </div>
+
+        <div class="back-page">
+            <a href="index.html" , methods = "GET">⬅HomePage</a>
+        </div>
+
+
+
+        <div class="my-form">
+
+            <form>
+
+                <div class = "area">
+                    <label class="area">Area</label><br><br>
+                    <input class="area-i" type="number" name="Area" placeholder="Area"  step="0.001"  min="10" max="22" required="required"><br><br>
+                </div>
+
+                <label class="peri">Perimeter</label><br><br>
+                <input class="peri-i" type="number" name="Perimeter" placeholder="Perimeter"  step="0.001" min="12" max="22" required="required"><br><br>
+
+                <label class="peri">Compactness</label><br><br>
+                <input class="comp-i" type="number" name="Compactness" placeholder="Compactness"  step="0.001" min="0.79" max="0.92" required="required"><br><br>
+
+                <label class="len">Length Of Kernel</label><br><br>
+                <input class="len-i" type="number" name="Length Of Kernel" placeholder="Length Of Kernel"  step="0.001" min="4.80" max="6.67" required="required"><br><br>
+
+                <label class="wid">Width Of Kernel</label><br><br>
+                <input class="wid-i" type="number" name="Width Of Kernel" placeholder="Width Of Kernel"  step="0.001" min="2.6" max="4.1" required="required"><br><br>
+
+                <label class="asy">Asymmetry Coefficient</label><br><br>
+                <input class="asy-i" type="number" name="Asymmetry Coefficient" placeholder="Asymmetry Coefficient"  step="0.001" min="0.7" max="8.45" required="required"><br><br>
+
+                <label class="kernel-groove">Length Of Kernel Groove</label><br><br>
+                <input class="kernel-groove-i" type="number" name="Len.Kernel Groove" placeholder="Length Of Kernel Groove"  step=".001" min="4.5" max="6.6" required="required"><br><br><br>
+
+                <button type="reset" class="reset-but">Reset</button>
+
+                <br><br>
+
+
+                <button  formaction="{{url_for ('predict')}}" formmethod="post" type="submit" class="submit-but" value="predict">Predict</button>
+
+
+
+                <div class="foot">
+                <footer>Copyright © 2021 by Saud Shaikh and Shivam Pol</footer>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>
